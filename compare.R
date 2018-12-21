@@ -1,3 +1,6 @@
+// e615 and caret615 is the implementation of SVM using two existing R package(e1071, caret), respectively.
+// The project finally compared the performance of self-developed R package with the two mentioned above.
+
 e615 <- function(train_data,train_label,test_data,test_label,kernel,c){
   library(e1071)
 train_data = read.table(train_data, header = F)
